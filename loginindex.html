@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Examination System</title>
+  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+</head>
+<body>
+  <h1>Online Examination System</h1>
+  <div id="questions-container">
+    <h2 id="question">Question:</h2>
+    <div id="options">
+      <input type="radio" name="answer" id="option1" value="1">
+      <label for="option1" id="option1-label">Option 1</label><br>
+      <input type="radio" name="answer" id="option2" value="2">
+      <label for="option2" id="option2-label">Option 2</label><br>
+      <input type="radio" name="answer" id="option3" value="3">
+      <label for="option3" id="option3-label">Option 3</label><br>
+      <input type="radio" name="answer" id="option4" value="4">
+      <label for="option4" id="option4-label">Option 4</label><br>
+    </div>
+    <button id="submit-btn" onclick="showResults()">Submit</button>
+  </div>
+
+  <div id="results-container" style="display: none;">
+    <h2 id="result"></h2>
+    <!--<button id="restart-btn" onclick="restartExam()">Restart Exam</button>-->
+    <a href="./feedback.html" id="feedback"><button>Feedback</button></a>
+  </div>
+
+  <script src="logindesign.js"></script>
+</body>
+</html>
